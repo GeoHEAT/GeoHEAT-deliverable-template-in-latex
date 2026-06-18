@@ -1,0 +1,136 @@
+% This is a deliverable template for the GeoHEAT project
+% Copyright © 2026 Jinqiang Chen
+
+
+\documentclass{geoheatdeliverable}
+\usepackage{lipsum}
+
+% ------------------------------------------------------------
+% Metadata
+% ------------------------------------------------------------
+\setdeliverableno{x.x}
+\setdeliverabletitle{Deliverable Title}
+
+\setfulltitle{Full Title}
+
+\setauthors{Author 1, Author 2}
+
+\setorcid{0000-0000-0000-0000, 1234-5678-1234-5678}
+
+\setleadbeneficiary{lead beneficiary}
+
+\setotherbeneficiaries{other beneficiaries}
+
+\setduedate{dd.mm.yyyy}
+
+\setdisseminationlevel{<Confidential> / <Public> }
+
+\setdeliverablestatus{<Draft> / <Revision> / <Final> }
+
+\setdoi{}
+
+\setlicense{<CC-BY 4.0> }
+
+\setrecommendedcitation{%
+<Authors>., The H2020 GeoHEAT project: Deliverable <No.> – <Title>, <Publication year> %
+}
+
+\setfooterdeliverable{GeoHEAT Deliverable x.x}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%NOTE: The revision history and approval status need to fill in 'geoheatdelverable.cls'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% ------------------------------------------------------------
+% Logo files
+% ------------------------------------------------------------
+\setgeoheatlogolarge{figures/geoheat-logo.png}
+\setgeoheatlogosmall{figures/geoheat-logo-small.png}
+\seteulogo{figures/EU-logo.jpg}
+
+% ------------------------------------------------------------
+% Document
+% ------------------------------------------------------------
+\begin{document}
+
+\makegeoheatfrontmatter
+
+%% \linenumbers
+
+%% main text
+\section{Executive Summary}
+This is placeholder text for the executive summary. Replace this paragraph with a brief overview of your work, key findings, and conclusions.
+
+\section{Introduction}
+This is placeholder text for the introduction section. Briefly describe the motivation, background, and the problem you address.
+
+\section{Methodology}
+This is placeholder text for the methodology section. Describe the overall approach, workflow, and assumptions.
+
+\subsection{Awesome Text}
+Placeholder text for this subsection. Explain the key ideas, methods, or parameters used in your study. References are provided in \texttt{references.bib} \cite{Yee1966}. 
+
+Placeholder text for this subsection. Explain the key ideas, methods, or parameters used in your study. Some references \cite{harrington2001time, CASSIDY200941}. 
+
+Placeholder text for this subsection.
+
+\subsubsection{Awesome Figures}
+Below is an example figure block. Replace the placeholder with your own figure file when ready.
+
+\begin{figure}[htbp]
+    \centering
+    \fbox{% Comment this box
+        \parbox[c][0.28\textheight][c]{0.78\textwidth}{%
+            \centering
+            \vspace{0.9em}
+            \textbf{Example figure placeholder}\\
+            \small Insert your figure here
+            \vspace{0.9em}
+        }%
+    } % Uncoment the next line to insert a figure
+    % \includegraphics[width=\textwidth]{figures/figure1.png}
+    \caption{Example figure (placeholder).}
+    \label{fig:example_figure}
+\end{figure}
+
+\subsubsection{Awesome Tables}
+Below is an example table block. Replace the placeholder entries with your own table content later.
+
+\begin{table}[htbp]
+\centering
+\caption{Example table caption.}
+\label{tab:example_table}
+\begin{tabular}{rrrrrr}
+\toprule
+$A$ (unit) & $2A/\lambda$ & $m_{\mathrm{rms}}$ & $R_c$ (unit) & Peak Ratio & NRMSE (\%) \\
+\midrule
+$\alpha_1$ & $\beta_1$ & $\gamma_1$ & $\delta_1$ & $\epsilon_1$ & $\zeta_1$ \\
+$\alpha_2$ & $\beta_2$ & $\gamma_2$ & $\delta_2$ & $\epsilon_2$ & $\zeta_2$ \\
+$\alpha_3$ & $\beta_3$ & $\gamma_3$ & $\delta_3$ & $\epsilon_3$ & $\zeta_3$ \\
+$\alpha_4$ & $\beta_4$ & $\gamma_4$ & $\delta_4$ & $\epsilon_4$ & $\zeta_4$ \\
+$\alpha_5$ & $\beta_5$ & $\gamma_5$ & $\delta_5$ & $\epsilon_5$ & $\zeta_5$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Awesome paragraph}
+Placeholder text for this paragraph. Add any assumptions, definitions, or special-case notes here.
+
+\section{Results}
+Placeholder text for results. Placeholder text for results. Summarize what you observed, and reference figures/tables (e.g., Fig. \ref{fig:example_figure}, Table \ref{tab:example_table}).
+
+\section{Discussion}
+Placeholder text for discussion. Interpret the results, explain trends, and connect to prior work.
+
+\section{Conclusion}
+Placeholder text for conclusions. Summarize contributions and outline next steps.
+
+
+\makegeoheatreferences{elsarticle-num}{references}
+
+\makegeoheatimprint
+
+\makegeoheatliabilityclaim
+\end{document}
