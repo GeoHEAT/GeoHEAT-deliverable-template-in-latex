@@ -154,6 +154,23 @@
 }
 \newcommand{\FooterDeliverable}{GeoHEAT Deliverable \textless No.\textgreater}
 
+% Revision history: table rows, each ending in \\ \hline
+\newcommand{\RevisionHistory}{%
+\textbf{Version 01} & NN & dd.mm.yyyy & First draft \\ \hline
+\textbf{Version 02} & NN & dd.mm.yyyy & Second draft \\ \hline
+\textbf{Final version} & NN & dd.mm.yyyy & \\ \hline
+}
+
+% Approval status: name and date per role
+\newcommand{\DeliverableResponsibleName}{<Name>}
+\newcommand{\DeliverableResponsibleDate}{<date>}
+\newcommand{\WPLeaderName}{<Name>}
+\newcommand{\WPLeaderDate}{<date>}
+\newcommand{\ReviewerName}{<Name>}
+\newcommand{\ReviewerDate}{<date>}
+\newcommand{\ProjectCoordinatorName}{<Name>}
+\newcommand{\ProjectCoordinatorDate}{<date>}
+
 % Logos
 \newcommand{\GeoheatLogoLarge}{figures/geoheat-logo.png}
 \newcommand{\GeoheatLogoSmall}{figures/geoheat-logo-small.png}
@@ -177,6 +194,11 @@
 \newcommand{\setlicense}[1]{\renewcommand{\LicenseInfo}{#1}}
 \newcommand{\setrecommendedcitation}[1]{\renewcommand{\RecommendedCitation}{#1}}
 \newcommand{\setfooterdeliverable}[1]{\renewcommand{\FooterDeliverable}{#1}}
+\newcommand{\setrevisionhistory}[1]{\renewcommand{\RevisionHistory}{#1}}
+\newcommand{\setdeliverableresponsible}[2]{\renewcommand{\DeliverableResponsibleName}{#1}\renewcommand{\DeliverableResponsibleDate}{#2}}
+\newcommand{\setwpleader}[2]{\renewcommand{\WPLeaderName}{#1}\renewcommand{\WPLeaderDate}{#2}}
+\newcommand{\setreviewer}[2]{\renewcommand{\ReviewerName}{#1}\renewcommand{\ReviewerDate}{#2}}
+\newcommand{\setprojectcoordinator}[2]{\renewcommand{\ProjectCoordinatorName}{#1}\renewcommand{\ProjectCoordinatorDate}{#2}}
 
 \newcommand{\setgeoheatlogolarge}[1]{\renewcommand{\GeoheatLogoLarge}{#1}}
 \newcommand{\setgeoheatlogosmall}[1]{\renewcommand{\GeoheatLogoSmall}{#1}}
@@ -283,8 +305,8 @@
         \vspace{-0.75cm}
         \small\color{FooterGrey}
         GeoHEAT is funded by the European Union under the Horizon Europe Framework Programme\\
-        (Grant agreement ID: 101147571). This project is also supported by the Swiss State Secretariat\\
-        for Education, Research and Innovation (SERI).
+        (Grant agreement ID: 101147571). This work has received funding from the\\
+        Swiss State Secretariat for Education, Research and Innovation (SERI).
         \end{minipage}
     }
     \fancyfoot[R]{%
@@ -381,7 +403,6 @@
 
 \vspace{0.5cm}
 
-%%%%%%%%%% To be filled in %%%%%%%%%%%%%%%
 \begin{tabularx}{\textwidth}{|R{2.3cm}|R{1.48cm}|L{3.2cm}|X|}
 \hline
 \textbf{Revision history} &
@@ -389,21 +410,7 @@
 \textbf{Delivery date} &
 \textbf{Summary of changes and comments} \\
 \hline
-\textbf{Version 01} &
-NN &
-dd.mm.yyyy &
-First draft \\
-\hline
-\textbf{Version 02} &
-NN &
-dd.mm.yyyy &
-Second draft \\
-\hline
-\textbf{Final version} &
-NN &
-dd.mm.yyyy &
-\\
-\hline
+\RevisionHistory
 \end{tabularx}
 
 \vspace{0.5cm}
@@ -416,21 +423,21 @@ dd.mm.yyyy &
 \textbf{Name} &
 \textbf{Date} \\
 \hline
-\textbf{Deliverable responsible} &  
- <Name> &
- <date> \\
+\textbf{Deliverable responsible} &
+\DeliverableResponsibleName &
+\DeliverableResponsibleDate \\
 \hline
-\textbf{WP leader} & 
-<Name> &
-<date> \\
+\textbf{WP leader} &
+\WPLeaderName &
+\WPLeaderDate \\
 \hline
 \textbf{Reviewer} &
-<Name> &
-<date>\\
+\ReviewerName &
+\ReviewerDate \\
 \hline
 \textbf{Project Coordinator} &
-<Name> &
-<date> \\
+\ProjectCoordinatorName &
+\ProjectCoordinatorDate \\
 \hline
 \end{tabularx}
 \endgroup
